@@ -1,0 +1,23 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "[mac](https://download.docker.com/mac/stable/Docker.dmg) [windows](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe) [linux](https://get.docker.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liubin915249126/docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liubin915249126/docker/issues"
+  },
+  "homepage": "https://github.com/liubin915249126/docker#readme",
+  "dependencies": {
+    "koa": "^2.12.0"
+  }
+}
