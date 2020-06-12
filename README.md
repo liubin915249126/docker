@@ -32,6 +32,7 @@ Container: 一个完整操作系统
    # 构建镜像 
    docker build -t docker_demo .
    #创建一个新的容器并运行，-d为后台执行，-p 9000:3000前面为主机端口，后面是容器端口。docker_demo镜像名
+   #  --rm 容器退出后删除
 docker run -d -p 9000:3000 docker_demo
 #启动已被停止的容器
 docker start docker_demo
@@ -49,8 +50,21 @@ sudo docker exec -it 104e28f2f072 /bin/bash
 docker ps 
 #获取容器获取容器的日志 104e28f2f072容器id，-t:显示时间戳
 docker logs -f -t 104e28f2f072 
+
+#停用所有容器：
+docker stop $(docker ps -q)
+
+#删除所有容器：
+docker rm $(docker ps -aq) 
+
 ```
 
+#### docker-compose
+```
+curl -L https://get.daocloud.io/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+```
 
 
 https://hub.docker.com/
