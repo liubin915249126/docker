@@ -33,7 +33,7 @@ Container: 一个完整操作系统
    docker build -t docker_demo .
    #创建一个新的容器并运行，-d为后台执行，-p 9000:3000前面为主机端口，后面是容器端口。docker_demo镜像名
    #  --rm 容器退出后删除
-docker run -d -p 9000:3000 docker_demo
+docker run -d -p 9000:3000 --link=mongo_demo:mongodb node_demo
 #启动已被停止的容器
 docker start docker_demo
 #关闭已被启动的容器

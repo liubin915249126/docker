@@ -2,3 +2,5 @@
 get-docker.sh
 docker-compose.yml
 node_modules/*
+nginx/*
+data/*
