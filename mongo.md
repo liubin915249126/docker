@@ -12,3 +12,4 @@ db.auth("admin","admin")
     # 启动 node 应用  --link=mongodb_demo:mongodb 链接mongodb_demo的容器 mongodb为程序里面是用的
     docker run -d -p 9000:3000 --link=mongodb_demo:mongodb node_demo
 ```
+
